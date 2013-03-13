@@ -1,0 +1,1221 @@
+
+
+Started GET "/controle/index" for 127.0.0.1 at 2013-03-13 16:54:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/controle/index"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 16:54:50 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Compiled application.css  (47464ms)  (pid 5831)
+Compiled jquery182.js  (3ms)  (pid 5831)
+Compiled jquery-ui.js  (32ms)  (pid 5831)
+Compiled bootstrap/bootstrap-transition.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-affix.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-alert.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-button.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-carousel.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-collapse.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-dropdown.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-modal.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-tab.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-popover.js  (0ms)  (pid 5831)
+Compiled bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5831)
+Compiled bootstrap.js  (135ms)  (pid 5831)
+Compiled chosen.jquery.js  (1ms)  (pid 5831)
+Compiled jquery.uniform.js  (1ms)  (pid 5831)
+Compiled jquery.knob.js  (0ms)  (pid 5831)
+Compiled jquery.piety.js  (0ms)  (pid 5831)
+Compiled jquery.simplePagination.js  (0ms)  (pid 5831)
+Compiled jquery.gritter.js  (0ms)  (pid 5831)
+Compiled notifications.js  (0ms)  (pid 5831)
+Compiled maps/jquery-jvectormap.js  (0ms)  (pid 5831)
+Compiled maps/world-map.js  (1ms)  (pid 5831)
+Compiled maps/map-init.js  (0ms)  (pid 5831)
+Compiled faq.js  (347ms)  (pid 5831)
+Compiled docs.js  (117ms)  (pid 5831)
+Compiled sliders.js  (129ms)  (pid 5831)
+Compiled circles.js  (119ms)  (pid 5831)
+Compiled load-image.js  (0ms)  (pid 5831)
+Compiled extensions/bootstrap-tags.js  (0ms)  (pid 5831)
+Compiled tags.js  (123ms)  (pid 5831)
+Compiled extensions/bootstrap-modalmanager.js  (1ms)  (pid 5831)
+Compiled extensions/bootstrap-modal.js  (0ms)  (pid 5831)
+Compiled extensions/bootstrap-datepicker.js  (0ms)  (pid 5831)
+Compiled extensions/bootstrap-image-gallery.js  (0ms)  (pid 5831)
+Compiled dataTables/jquery.dataTables.js  (2ms)  (pid 5831)
+Compiled flot/jquery.flot.js  (1ms)  (pid 5831)
+Compiled flot/jquery.flot.resize.js  (0ms)  (pid 5831)
+Compiled flot/jquery.flot.pie.js  (0ms)  (pid 5831)
+Compiled charts.js  (0ms)  (pid 5831)
+Compiled fullcalendar/fullcalendar.js  (1ms)  (pid 5831)
+Compiled fullcalendar/data.js  (0ms)  (pid 5831)
+Compiled fullcalendar/gcal.js  (0ms)  (pid 5831)
+Compiled justgage/raphael.2.1.0.min.js  (1ms)  (pid 5831)
+Compiled justgage/justgage.js  (0ms)  (pid 5831)
+Compiled gauges.js  (124ms)  (pid 5831)
+Compiled ie-hacks.js  (0ms)  (pid 5831)
+Compiled application.js  (1691ms)  (pid 5831)
+Compiled html5shiv.js  (0ms)  (pid 5831)
+Compiled excanvas.js  (0ms)  (pid 5831)
+Compiled ie_fix.js  (0ms)  (pid 5831)
+Compiled ie_fix.css  (1420ms)  (pid 5831)
+  Rendered partials/app_ui/_sidebar.html.erb (8.6ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.3ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.2ms)
+  Rendered partials/app_ui/_footer.html.erb (0.3ms)
+Completed 200 OK in 51105ms (Views: 51104.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 16:55:41 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/app_ui/_sidebar.html.erb (1.1ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery182.js - 200 OK (28ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery-ui.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-alert.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-button.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-modal.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-tab.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-popover.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 200 OK (22ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /bootstrap.js - 200 OK (18ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /chosen.jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery.uniform.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery.knob.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery.piety.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery.gritter.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /jquery.simplePagination.js - 200 OK (3ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /notifications.js - 200 OK (1ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /maps/jquery-jvectormap.js - 200 OK (4ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /maps/world-map.js - 200 OK (10ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /maps/map-init.js - 200 OK (1ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /faq.js - 200 OK (4ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /docs.js - 200 OK (1ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /sliders.js - 200 OK (1ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /load-image.js - 200 OK (1ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /circles.js - 200 OK (1ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /extensions/bootstrap-tags.js - 200 OK (1ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /tags.js - 200 OK (1ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 200 OK (2ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /extensions/bootstrap-modal.js - 200 OK (1ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 200 OK (1ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /extensions/bootstrap-datepicker.js - 200 OK (1ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /dataTables/jquery.dataTables.js - 200 OK (1ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /flot/jquery.flot.js - 200 OK (3ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /flot/jquery.flot.resize.js - 200 OK (1ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /flot/jquery.flot.pie.js - 200 OK (1ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /charts.js - 200 OK (1ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /fullcalendar/fullcalendar.js - 200 OK (1ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /fullcalendar/data.js - 200 OK (23ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /fullcalendar/gcal.js - 200 OK (1ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 200 OK (2ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /justgage/justgage.js - 200 OK (1ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /ie-hacks.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /application.js - 200 OK (38ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-13 16:55:42 -0300
+Served asset /gauges.js - 200 OK (1ms)
+
+
+Started GET "/assets/patterns/whitey_light.png" for 127.0.0.1 at 2013-03-13 16:55:43 -0300
+Served asset /patterns/whitey_light.png - 200 OK (12ms)
+
+
+Started GET "/assets/patterns/low_linen.png" for 127.0.0.1 at 2013-03-13 16:55:43 -0300
+Served asset /patterns/low_linen.png - 200 OK (29ms)
+
+
+Started GET "/assets/users/user3.png" for 127.0.0.1 at 2013-03-13 16:55:43 -0300
+Served asset /users/user3.png - 200 OK (16ms)
+
+
+Started GET "/assets/openwebicons.woff" for 127.0.0.1 at 2013-03-13 16:55:43 -0300
+Served asset /openwebicons.woff - 200 OK (3ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-03-13 16:55:43 -0300
+Served asset /fontawesome-webfont.woff - 200 OK (19ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 17:00:09 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/app_ui/_sidebar.html.erb (3.2ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 28.1ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 17:01:01 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/app_ui/_sidebar.html.erb (2.4ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /charts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 17:01:02 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/app_ui/_sidebar.html.erb (2.5ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /charts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:11 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/app_ui/_sidebar.html.erb (1.0ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 23.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /charts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 17:08:25 -0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/dashboard.html" for 127.0.0.1 at 2013-03-13 17:08:35 -0300
+
+ActionController::RoutingError (No route matches [GET] "/dashboard.html"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/app_ui/_sidebar.html.erb (1.1ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.3ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 47.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /charts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 17:09:30 -0300
+Served asset /application.js - 304 Not Modified (1ms)
