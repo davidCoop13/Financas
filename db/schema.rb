@@ -11,12 +11,47 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313173317) do
+ActiveRecord::Schema.define(:version => 20130319140501) do
+
+  create_table "accounts", :force => true do |t|
+    t.string   "name"
+    t.string   "number"
+    t.integer  "transactions_id"
+    t.integer  "bill_id"
+    t.integer  "invoice_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "accounts", ["bill_id"], :name => "index_accounts_on_bill_id"
+  add_index "accounts", ["invoice_id"], :name => "index_accounts_on_invoice_id"
+  add_index "accounts", ["transactions_id"], :name => "index_accounts_on_transactions_id"
+
+  create_table "bills", :force => true do |t|
+    t.string   "number"
+    t.date     "payment_date"
+    t.string   "payment_method"
+    t.float    "amount"
+    t.boolean  "paid"
+    t.integer  "account_id"
+    t.integer  "category_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "bills", ["account_id"], :name => "index_bills_on_account_id"
+  add_index "bills", ["category_id"], :name => "index_bills_on_category_id"
 
   create_table "calendario_meses", :force => true do |t|
     t.string   "mmyyyy"
     t.integer  "mes"
     t.integer  "ano"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -203,6 +238,21 @@ ActiveRecord::Schema.define(:version => 20130313173317) do
   add_index "fato_suporte_tempo_de_atendimentos", ["departamento_id"], :name => "index_fato_suporte_tempo_de_atendimentos_on_departamento_id"
   add_index "fato_suporte_tempo_de_atendimentos", ["tipo_chamado_id"], :name => "index_fato_suporte_tempo_de_atendimentos_on_tipo_chamado_id"
 
+  create_table "invoices", :force => true do |t|
+    t.string   "number"
+    t.date     "payment_date"
+    t.string   "payment_method"
+    t.float    "amount"
+    t.boolean  "paid"
+    t.integer  "account_id"
+    t.integer  "category_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "invoices", ["account_id"], :name => "index_invoices_on_account_id"
+  add_index "invoices", ["category_id"], :name => "index_invoices_on_category_id"
+
   create_table "motivos", :force => true do |t|
     t.string   "nome"
     t.string   "descricao"
@@ -215,5 +265,18 @@ ActiveRecord::Schema.define(:version => 20130313173317) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "transactions", :force => true do |t|
+    t.string   "number"
+    t.date     "date"
+    t.string   "description"
+    t.float    "amount"
+    t.boolean  "credit"
+    t.integer  "account_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "transactions", ["account_id"], :name => "index_transactions_on_account_id"
 
 end
