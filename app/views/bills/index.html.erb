@@ -1,35 +1,43 @@
-<h1>Listing bills</h1>
+<div class="box bordered" style="position:relative;">
+<div class="box-header" >
+  <i class="icon-signal"></i> Lista de contas
+</div>
 
-<table>
-  <tr>
-    <th>Number</th>
-    <th>Payment date</th>
-    <th>Payment method</th>
-    <th>Amount</th>
-    <th>Paid</th>
-    <th>Account</th>
-    <th>Category</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<table class="table table-striped data-table">
 
-<% @bills.each do |bill| %>
+  <thead>
   <tr>
-    <td><%= bill.number %></td>
-    <td><%= bill.payment_date %></td>
-    <td><%= bill.payment_method %></td>
-    <td><%= bill.amount %></td>
-    <td><%= bill.paid %></td>
-    <td><%= bill.account %></td>
-    <td><%= bill.category %></td>
-    <td><%= link_to 'Show', bill %></td>
-    <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
-    <td><%= link_to 'Destroy', bill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <th>Número da Conta</th>
+    <th>Data de pagamento</th>
+    <th>Método</th>
+    <th>Valor</th>
+    <th>Pago</th>
+    <th>Conta</th>
+    <th>Categoria</th>
+    <th>Ações</th>
   </tr>
-<% end %>
+  </thead>
+
+  <tbody>
+
+    <% @bills.each do |bill| %>
+        <tr>
+            <td><%= bill.number %></td>
+            <td><%= bill.payment_date %></td>
+            <td><%= bill.payment_method %></td>
+            <td>R$<%= bill.amount %></td>
+            <td><%= bill.paid %></td>
+            <td><%= bill.account %></td>
+            <td><%= bill.category %></td>
+            <td><%= link_to 'Detalhar', bill, :class => 'btn btn-mini medium-blue' %>
+                <%= link_to 'Editar', edit_bill_path(bill), :class => 'btn btn-mini medium-blue' %>
+                <%= link_to 'Excluir', bill, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %></td>
+        </tr>
+  <% end %>
+
+  </tbody>
 </table>
-
+</div>
 <br />
 
-<%= link_to 'New Bill', new_bill_path %>
+<%= link_to 'Nova Conta', new_bill_path, :class => 'btn btn-mini medium-blue' %>

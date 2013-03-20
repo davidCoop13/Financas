@@ -1,40 +1,40 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Number:</b>
+  <b>Número:</b>
   <%= @bill.number %>
 </p>
 
 <p>
-  <b>Payment date:</b>
+  <b>Data do pagamento:</b>
   <%= @bill.payment_date %>
 </p>
 
 <p>
-  <b>Payment method:</b>
+  <b>Método de pagamento:</b>
   <%= @bill.payment_method %>
 </p>
 
 <p>
-  <b>Amount:</b>
+  <b>Valor:</b>
   <%= @bill.amount %>
 </p>
 
 <p>
-  <b>Paid:</b>
+  <b>Pago:</b>
   <%= @bill.paid %>
 </p>
 
 <p>
-  <b>Account:</b>
+  <b>Conta:</b>
   <%= @bill.account %>
 </p>
 
 <p>
-  <b>Category:</b>
+  <b>Categoria:</b>
   <%= @bill.category %>
 </p>
 
 
-<%= link_to 'Edit', edit_bill_path(@bill) %> |
-<%= link_to 'Back', bills_path %>
+<%= link_to 'Editar', edit_bill_path(@bill), :class => 'btn btn-mini medium-blue' %> 
+<%= link_to 'Voltar', bills_path, :class => 'btn btn-mini medium-blue' %>
