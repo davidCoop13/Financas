@@ -3,23 +3,23 @@
 
   <div class="form-inputs">
 
-    <%= f.input :number %>
+    <%= f.input :number, label: 'Número da conta' %>
 
-    <%= f.input :payment_date %>
+    <%= f.input :payment_date, label: 'Data de pagamento' %>
 
-    <%= f.input :payment_method %>
+    <%= f.input :payment_method, label: 'Método de pagamento' %>
 
-    <%= f.input :amount %>
+    <%= f.input :amount, label: 'Valor' %>
 
-    <%= f.input :paid %>
+    <%= f.input :paid, label: 'Pago', disabled: true %>
 
-    <%= f.association :account %>
+    <%= f.association :account, label: 'Conta' %>
 
-    <%= f.association :category %>
+    <%= f.association :category, label: 'Categoria' %>
 
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, 'Atualizar', :class => 'btn btn-small medium-blue' %>
   </div>
 <% end %>
