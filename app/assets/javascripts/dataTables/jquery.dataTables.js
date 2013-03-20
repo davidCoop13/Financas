@@ -9216,7 +9216,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Vizualizar _MENU_ entradas",
 		
 		
 			/**
@@ -9290,7 +9290,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			"sSearch": "Pesquisar:",
 		
 		
 			/**

@@ -1,6 +1,24 @@
-<h1>Editing transaction</h1>
+<div class="container-fluid">
+  	<div class="row-fluid">
+    	<div class="span12">
 
-<%= render 'form' %>
+      		<div class="box bordered">
 
-<%= link_to 'Show', @transaction %> |
-<%= link_to 'Back', transactions_path %>
+        		<div class="row-fluid">
+          			<div class="span12">
+						<div class="padded">
+
+						<div class="section-title">Editando transação</div>
+
+							<%= render 'form' %>
+
+							<%= link_to 'Detalhar', @transaction, :class => 'btn btn-mini medium-blue' %> 
+							<%= link_to 'Voltar', transactions_path, :class => 'btn btn-mini medium-blue' %>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

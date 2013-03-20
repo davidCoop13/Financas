@@ -1,35 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-<p>
-  <b>Number:</b>
-  <%= @transaction.number %>
-</p>
+      <div class="box bordered">
 
-<p>
-  <b>Date:</b>
-  <%= @transaction.date %>
-</p>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="padded">
 
-<p>
-  <b>Description:</b>
-  <%= @transaction.description %>
-</p>
+              <div class="section-title">Transação</div>
 
-<p>
-  <b>Amount:</b>
-  <%= @transaction.amount %>
-</p>
+              <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Credit:</b>
-  <%= @transaction.credit %>
-</p>
+              <p>
+                <b>Número:</b>
+                <%= @transaction.number %>
+              </p>
 
-<p>
-  <b>Account:</b>
-  <%= @transaction.account %>
-</p>
+              <p>
+                <b>Data:</b>
+                <%= @transaction.date %>
+              </p>
 
+              <p>
+                <b>Método:</b>
+                <%= @transaction.description %>
+              </p>
 
-<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
-<%= link_to 'Back', transactions_path %>
+              <p>
+                <b>Valor:</b>
+                <%= @transaction.amount %>
+              </p>
+
+              <p>
+                <b>Conta:</b>
+                <%= @transaction.account.name %>
+              </p>
+
+              <%= link_to 'Editar', edit_transaction_path(@transaction), :class => 'btn btn-mini medium-blue' %> 
+              <%= link_to 'Voltar', transactions_path, :class => 'btn btn-mini medium-blue' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
