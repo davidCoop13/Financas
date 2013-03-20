@@ -1,35 +1,62 @@
-<h1>Listing invoices</h1>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-<table>
-  <tr>
-    <th>Number</th>
-    <th>Payment date</th>
-    <th>Payment method</th>
-    <th>Amount</th>
-    <th>Paid</th>
-    <th>Account</th>
-    <th>Category</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <div class="box bordered">
 
-<% @invoices.each do |invoice| %>
-  <tr>
-    <td><%= invoice.number %></td>
-    <td><%= invoice.payment_date %></td>
-    <td><%= invoice.payment_method %></td>
-    <td><%= invoice.amount %></td>
-    <td><%= invoice.paid %></td>
-    <td><%= invoice.account %></td>
-    <td><%= invoice.category %></td>
-    <td><%= link_to 'Show', invoice %></td>
-    <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
-    <td><%= link_to 'Destroy', invoice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="padded">
 
-<br />
+              <div class="section-title">Contas a receber</div>
 
-<%= link_to 'New Invoice', new_invoice_path %>
+              <div class="box bordered" style="position:relative;">
+              <div class="box-header" >
+                <i class="icon-signal"></i> Lista de contas a receber
+              </div>
+
+              <table class="table table-striped data-table">
+
+                <thead>
+                <tr>
+                  <th>Número da conta</th>
+                  <th>Data de pagamento</th>
+                  <th>Método</th>
+                  <th>Valor</th>
+                  <th>Pago</th>
+                  <th>Conta</th>
+                  <th>Categoria</th>
+                  <th>Ações</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                  <% @invoices.each do |invoice| %>
+                      <tr>
+                          <td><%= invoice.number %></td>
+                          <td><%= invoice.payment_date %></td>
+                          <td><%= invoice.payment_method %></td>
+                          <td>R$<%= invoice.amount %></td>
+                          <td><%= invoice.paid %></td>
+                          <td><%= invoice.account %></td>
+                          <td><%= invoice.category %></td>
+                          <td><%= link_to 'Detalhar', invoice, :class => 'btn btn-mini medium-blue' %>
+                              <%= link_to 'Editar', edit_invoice_path(invoice), :class => 'btn btn-mini medium-blue' %>
+                              <%= link_to 'Excluir', invoice, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %></td>
+                      </tr>
+                <% end %>
+
+                </tbody>
+              </table>
+              </div>
+              <br />
+
+              <%= link_to 'Nova conta a receber', new_invoice_path, :class => 'btn btn-mini medium-blue' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
