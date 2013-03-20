@@ -20,7 +20,7 @@
     <td><%= transaction.description %></td>
     <td><%= transaction.amount %></td>
     <td><%= transaction.credit %></td>
-    <td><%= transaction.account %></td>
+    <td><%= transaction.account.name %></td>
     <td><%= link_to 'Show', transaction %></td>
     <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
     <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>

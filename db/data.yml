@@ -1,0 +1,112 @@
+
+---
+accounts:
+  columns:
+  - id
+  - name
+  - number
+  - transactions_id
+  - bill_id
+  - invoice_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Banco do Brasil
+    - '123456789'
+    - 
+    - 
+    - 
+    - 2013-03-19 15:01:34.000000000 Z
+    - 2013-03-19 15:01:34.000000000 Z
+
+---
+bills:
+  columns:
+  - id
+  - number
+  - payment_date
+  - payment_method
+  - amount
+  - paid
+  - account_id
+  - category_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ''
+    - 2013-03-25
+    - ''
+    - 600.0
+    - false
+    - 1
+    - 
+    - 2013-03-19 23:16:01.000000000 Z
+    - 2013-03-19 23:16:01.000000000 Z
+
+---
+invoices:
+  columns:
+  - id
+  - number
+  - payment_date
+  - payment_method
+  - amount
+  - paid
+  - account_id
+  - category_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ''
+    - 2013-03-21
+    - ''
+    - 1000.0
+    - false
+    - 1
+    - 
+    - 2013-03-19 23:16:48.000000000 Z
+    - 2013-03-19 23:16:48.000000000 Z
+
+---
+transactions:
+  columns:
+  - id
+  - number
+  - date
+  - description
+  - amount
+  - credit
+  - account_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ''
+    - 2013-03-19
+    - Pagamento 1
+    - 100.0
+    - false
+    - 1
+    - 2013-03-19 23:10:00.000000000 Z
+    - 2013-03-19 23:10:00.000000000 Z
+  - - 2
+    - ''
+    - 2013-03-19
+    - Pagamento 2
+    - 50.0
+    - false
+    - 1
+    - 2013-03-19 23:13:37.000000000 Z
+    - 2013-03-19 23:13:37.000000000 Z
+  - - 3
+    - ''
+    - 2013-03-19
+    - Recebimento 1
+    - 2000.0
+    - true
+    - 1
+    - 2013-03-19 23:14:09.000000000 Z
+    - 2013-03-19 23:14:09.000000000 Z
