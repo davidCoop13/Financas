@@ -10,9 +10,6 @@
 //= require jquery.gritter
 //= require notifications
 
-//= require jquery
-//= require jquery_ujs
-
 //= require maps/jquery-jvectormap
 //= require maps/world-map
 //= require maps/map-init

@@ -19,8 +19,8 @@
 
                 <thead>
                 <tr>
-                  <th>Número da conta</th>
-                  <th>Data de pagamento</th>
+                  <th>Referência</th>
+                  <th>Data</th>
                   <th>Método</th>
                   <th>Valor</th>
                   <th>Pago</th>
@@ -39,9 +39,9 @@
                           <td><%= bill.payment_method %></td>
                           <td>R$<%= bill.amount %></td>
                           <td><%= bill.paid %></td>
-                          <td><%= bill.account %></td>
+                          <td><%= bill.account.name %></td>
                           <td><%= bill.category %></td>
-                          <td><%= link_to 'Detalhar', bill, :class => 'btn btn-mini medium-blue' %>
+                          <td width="160px" ><%= link_to 'Detalhar', bill, :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Editar', edit_bill_path(bill), :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Excluir', bill, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %></td>
                       </tr>
