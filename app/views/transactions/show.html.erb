@@ -38,6 +38,7 @@
               </p>
 
               <%= link_to 'Editar', edit_transaction_path(@transaction), :class => 'btn btn-mini medium-blue' %> 
+              <%= link_to 'Excluir', @transaction, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %>
               <%= link_to 'Voltar', transactions_path, :class => 'btn btn-mini medium-blue' %>
             </div>
           </div>

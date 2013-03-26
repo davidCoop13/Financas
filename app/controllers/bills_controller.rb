@@ -4,6 +4,9 @@ class BillsController < ApplicationController
   def index
     @bills = Bill.all
 
+    #breadcrumbs.add 'Contas a Pagar'
+
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @bills }

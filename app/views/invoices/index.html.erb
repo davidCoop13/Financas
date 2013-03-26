@@ -21,9 +21,7 @@
                 <tr>
                   <th>Referência</th>
                   <th>Data</th>
-                  <th>Método</th>
                   <th>Valor</th>
-                  <th>Pago</th>
                   <th>Conta</th>
                   <th>Categoria</th>
                   <th>Ações</th>
@@ -36,14 +34,13 @@
                       <tr>
                           <td><%= invoice.number %></td>
                           <td><%= invoice.payment_date %></td>
-                          <td><%= invoice.payment_method %></td>
                           <td>R$<%= invoice.amount %></td>
-                          <td><%= invoice.paid %></td>
                           <td><%= invoice.account.name %></td>
                           <td><%= invoice.category %></td>
-                          <td width="160px" ><%= link_to 'Detalhar', invoice, :class => 'btn btn-mini medium-blue' %>
-                              <%= link_to 'Editar', edit_invoice_path(invoice), :class => 'btn btn-mini medium-blue' %>
-                              <%= link_to 'Excluir', invoice, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %></td>
+                          <td width="160px" >
+                              <%= link_to 'Receber', invoice, :class => 'btn btn-mini medium-blue' %>
+                              <%= link_to 'Detalhar', invoice, :class => 'btn btn-mini medium-blue' %>
+                          </td>
                       </tr>
                 <% end %>
 
