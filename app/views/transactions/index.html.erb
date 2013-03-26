@@ -38,7 +38,8 @@ Teste
                           <td><%= transaction.date %></td>
                           <td><%= transaction.description %></td>
                           <td><%= transaction.amount %></td>
-                          <td><%= transaction.account %></td>
+                          <td><%= transaction.account.name %></td>
+                          <!-- NÃO ESTÁ FUNCIONANDO CHAMAR PELO NOME DA ACCOUNT -->
                           <td width="160px" ><%= link_to 'Detalhar', transaction, :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Editar', edit_transaction_path(transaction), :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Excluir', transaction, :method => :delete, :confirm => "Tem certeza que deseja apagar?", :class => 'btn btn-mini medium-blue' %></td>
