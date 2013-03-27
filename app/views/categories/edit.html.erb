@@ -1,6 +1,24 @@
-<h1>Editing category</h1>
+<div class="container-fluid">
+  	<div class="row-fluid">
+    	<div class="span12">
 
-<%= render 'form' %>
+      		<div class="box bordered">
 
-<%= link_to 'Show', @category %> |
-<%= link_to 'Back', categories_path %>
+        		<div class="row-fluid">
+          			<div class="span12">
+						<div class="padded">
+
+						<div class="section-title">Editando categoria</div>
+
+							<%= render 'form' %>
+
+							<%= link_to 'Detalhar', @category, :class => 'btn btn-mini medium-blue' %> 
+							<%= link_to 'Voltar', categories_path, :class => 'btn btn-mini medium-blue' %>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

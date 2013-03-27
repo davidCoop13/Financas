@@ -1,31 +1,65 @@
-<h1>Listing accounts</h1>
+Teste
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Number</th>
-    <th>Transactions</th>
-    <th>Bill</th>
-    <th>Invoice</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <div class="box bordered">
 
-<% @accounts.each do |account| %>
-  <tr>
-    <td><%= account.name %></td>
-    <td><%= account.number %></td>
-    <td><%= account.transactions %></td>
-    <td><%= account.bill %></td>
-    <td><%= account.invoice %></td>
-    <td><%= link_to 'Show', account %></td>
-    <td><%= link_to 'Edit', edit_account_path(account) %></td>
-    <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="padded">
 
-<br />
+              <div class="section-title">Movimentação</div>
 
-<%= link_to 'New Account', new_account_path %>
+
+              <div class="box bordered" style="position:relative;">
+              <div class="box-header" >
+                <i class="icon-signal"></i> Lista de Contas
+              </div>
+
+              <table class="table table-striped data-table">
+
+                <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Numero</th>
+                  <th>Transações</th>
+                  <th>Furas</th>
+                  <th>Contas</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                    <% @accounts.each do |account| %>
+                      <tr>
+                        <td><%= account.name %></td>
+                        <td><%= account.number %></td>
+                        <td><%= account.transaction %></td>
+                        <td><%= account.bill %></td>
+                        <td><%= account.invoice %></td>
+                        <td >
+                              <%= link_to 'Detalhar', account, :class => 'btn btn-mini medium-blue' %>
+                        </td>
+                        <td >
+                              <%= link_to 'Editar', edit_account_path(account), :class => 'btn btn-mini medium-blue' %>
+                        </td>
+                        <td ><%= link_to 'Apagar', account, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini medium-blue' %>
+                        </td>
+                      </tr>
+                <% end %>
+
+                </tbody>
+              </table>
+              </div>
+              <br />
+
+              <%= link_to 'Nova Conta', new_account_path, :class => 'btn btn-mini medium-blue' %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
