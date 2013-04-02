@@ -38,7 +38,7 @@
                           <td><%= invoice.account.name %></td>
                           <td><%= invoice.category %></td>
                           <td width="160px" >
-                              <%= link_to 'Receber', invoice, :class => 'btn btn-mini medium-blue' %>
+                              <%= link_to 'Receber', receive_invoice_path(invoice), :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Detalhar', invoice, :class => 'btn btn-mini medium-blue' %>
                           </td>
                       </tr>

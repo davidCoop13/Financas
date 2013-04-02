@@ -36,7 +36,7 @@
                           <td><%= transaction.number %></td>
                           <td><%= transaction.date %></td>
                           <td><%= transaction.description %></td>
-                          <td><%= transaction.amount %></td>
+                          <td>R$<%= transaction.amount %></td>
                           <td><%= transaction.account.name %></td>
                           <td width="160px" >
                               <%= link_to 'Detalhar', transaction, :class => 'btn btn-mini medium-blue' %>

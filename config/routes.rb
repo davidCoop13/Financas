@@ -1,5 +1,11 @@
 Financas::Application.routes.draw do
-  resources :invoices
+  
+  resources :invoices do
+   member do
+     get 'receive'
+     get 'receiveexec/:account_id', :action => 'receiveexec', :as => 'receiveexec'
+   end
+  end
 
   resources :bills do 
     member do
