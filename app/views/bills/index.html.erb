@@ -37,7 +37,7 @@
                           <td><%= bill.account.name %></td>
                           <td><%= bill.category %></td>
                           <td width="160px" >
-                              <%= link_to 'Pagar', bill, :class => 'btn btn-mini medium-blue' %>
+                              <%= link_to 'Pagar', pay_bill_path(bill), :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Detalhar', bill, :class => 'btn btn-mini medium-blue' %>
                           </td>
                       </tr>
