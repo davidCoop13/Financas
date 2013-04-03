@@ -8,12 +8,16 @@ Financas::Application.routes.draw do
   end
 
   resources :bills do 
+    collection do
+      get 'requests'
+    end
     member do
+      get 'approve'
+      get 'approveexec'
       get 'pay'
       get 'payexec/:account_id', :action => 'payexec', :as => 'payexec'
     end
   end
-
 
   resources :categories
 

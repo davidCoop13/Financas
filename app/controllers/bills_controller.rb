@@ -2,10 +2,21 @@ class BillsController < ApplicationController
   # GET /bills
   # GET /bills.json
   def index
-    @bills = Bill.where :paid => nil
+    @bills = Bill.where("ISNULL(paid) AND approved = TRUE")
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render json: @bills }
+    end
+  end
+
+  # GET /bills/requests
+  # GET /bills/requests.json
+  def requests
+    @bills = Bill.where :approved => false
+
+    respond_to do |format|
+      format.html # requests.html.erb
       format.json { render json: @bills }
     end
   end
@@ -26,6 +37,7 @@ class BillsController < ApplicationController
   def new
     @bill = Bill.new
     @bill.paid = false
+    @bill.approved = false
 
     respond_to do |format|
       format.html # new.html.erb
@@ -71,6 +83,30 @@ class BillsController < ApplicationController
     end
   end
 
+  # GET /bills/approve
+  # GET /bills/approve.json
+  def approve
+    @bill = Bill.find(params[:id])
+
+    respond_to do |format|
+      format.html # approve.html.erb
+      format.json { render json: @bill }
+    end
+  end
+
+  # GET /bills/requests
+  # GET /bills/requests.json
+  def approveexec
+    @bill = Bill.find(params[:id])
+    @bill.approved = true
+
+    @bill.save
+
+    respond_to do |format|
+      format.html { redirect_to "/bills/requests" }
+      format.json { render json: @bill }
+    end
+  end
 
   # POST /bills
   # POST /bills.json
