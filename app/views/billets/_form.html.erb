@@ -1,0 +1,6 @@
+<fieldset><br/>
+  <%= form_for "boleto", :url => "/billets/gerar_boleto/#{banco}"  do %>
+  <h6>Selecione o formato desejado:</h6> <%= select 'boleto','formato', @formatos %>
+  <%= submit_tag 'Gerar', :class => 'btn btn-mini medium-blue' %>
+  <% end  %>
+</fieldset>

@@ -1,5 +1,5 @@
 # encoding: utf-8
-class HomeController < ApplicationController
+class BilletsController < ApplicationController
   # layout 'brlayout'
 
   #TODO passar esses caras para Brcobranca::Boleto::Base

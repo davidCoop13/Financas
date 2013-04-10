@@ -49,3 +49,6 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+#BRCobrança
+gem 'brcobranca'

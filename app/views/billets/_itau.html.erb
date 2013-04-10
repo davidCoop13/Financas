@@ -1,0 +1,26 @@
+
+<div id="post-19" class="post">
+
+  <div class="postheader">
+    
+    <div class="posttitle" >
+      <span class="postmeta">
+        <p>Este boleto é gerado de acordo com a <a href="/docs/Documentacao_Itau.zip">documentação oficial do Banco Itaú</a>
+        </p>
+      </span>
+    </div>
+  </div>
+
+  <div class="commentcount" style="width: 78px;">
+    <a href="#">
+      <div style="border: 1px solid gray; width: 64px;">
+      <%= image_tag '/images/thumb_itau.png', :width => 64 %>
+      </div>
+    </a>
+  </div>
+
+  <div class="postcontent">
+    <%= render :partial => "form", :locals => {:banco => 'itau'} %>
+  </div>
+
+</div>
