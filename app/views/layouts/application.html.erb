@@ -10,7 +10,7 @@
   <!-- google charts -->
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
   <%= javascript_include_tag "application.js" %>
   <%= javascript_include_tag "rails" %>
@@ -28,11 +28,7 @@
 </head>
 
 <body>
-<%= render :partial => "partials/app_ui/sidebar" %>
-<%= render :partial => "partials/app_ui/top-bar" %>
-
 <section id="main">
-  <%= render :partial => "partials/app_ui/breadcrumbs" %>
   <%= yield %>
   <%= render :partial => "partials/app_ui/footer" %>
 </section>

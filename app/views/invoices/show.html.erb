@@ -18,13 +18,8 @@
               </p>
 
               <p>
-                <b>Data do pagamento:</b>
+                <b>Data do recebimento:</b>
                 <%= @invoice.payment_date %>
-              </p>
-
-              <p>
-                <b>Método de pagamento:</b>
-                <%= @invoice.payment_method %>
               </p>
 
               <p>
@@ -33,18 +28,13 @@
               </p>
 
               <p>
-                <b>Pago:</b>
+                <b>Recebido:</b>
                 <%= @invoice.paid %>
               </p>
 
               <p>
-                <b>Conta:</b>
-                <%= @invoice.account.name %>
-              </p>
-
-              <p>
                 <b>Categoria:</b>
-                <%= @invoice.category %>
+                <%= @invoice.category.name %>
               </p>
 
 

@@ -5,15 +5,11 @@
 
     <%= f.input :number, label: 'Número de referência' %>
 
-    <%= f.input :payment_date, label: 'Data de pagamento' %>
-
-    <%= f.input :payment_method, label: 'Método de pagamento' %>
+    <%= f.input :payment_date, label: 'Data de recebimento' %>
 
     <%= f.input :amount, label: 'Valor' %>
 
-    <%= f.input :paid, label: 'Pago', disabled: true %>
-
-    <%= f.association :account, label: 'Conta' %>
+    <%= f.association :account, label: 'Conta Esperada' %>
 
     <%= f.association :category, label: 'Categoria' %>
 

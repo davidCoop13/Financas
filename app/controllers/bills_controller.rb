@@ -2,7 +2,10 @@ class BillsController < ApplicationController
   # GET /bills
   # GET /bills.json
   def index
-    @bills = Bill.where("ISNULL(paid) AND approved = TRUE")
+    @bills = Bill.includes(:category).where("paid = 0 AND approved = TRUE")
+
+    #puts YAML::dump(@bills)
+    puts @bills
 
     respond_to do |format|
       format.html # index.html.erb
@@ -37,7 +40,9 @@ class BillsController < ApplicationController
   def new
     @bill = Bill.new
     @bill.paid = false
-    @bill.approved = false
+    @bill.approved = true
+
+    @bill.save()
 
     respond_to do |format|
       format.html # new.html.erb

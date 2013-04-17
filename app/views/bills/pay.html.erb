@@ -13,7 +13,7 @@
               <p id="notice"><%= notice %></p>
 
               <p>
-                <b>Número:</b>
+                <b>Referência:</b>
                 <%= @bill.number %>
               </p>
 
@@ -24,12 +24,7 @@
 
               <p>
                 <b>Categoria:</b>
-                <%= @bill.category %>
-              </p>
-
-              <p>
-                <b>Método de pagamento:</b>
-                <%= @bill.payment_method %>
+                <%= @bill.category.name %>
               </p>
 
               <p>
@@ -52,7 +47,7 @@
                   <tr>
                     <td><%= account.name %></td>
                     <td><%= account.number %></td>
-                    <td>100.00</td>
+                    <td><%= account.SomaTotalTransacoes %></td>
                     <td><%= link_to 'Pagar', payexec_bill_path(@bill, account_id: account), :class => 'btn btn-mini medium-blue'%></td>
                   </tr>
                 <% end %>

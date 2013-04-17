@@ -21,7 +21,6 @@
                   <th>Referência</th>
                   <th>Data</th>
                   <th>Valor</th>
-                  <th>Conta</th>
                   <th>Categoria</th>
                   <th>Ações</th>
                 </tr>
@@ -34,8 +33,7 @@
                           <td><%= bill.number %></td>
                           <td><%= bill.payment_date %></td>
                           <td>R$<%= bill.amount %></td>
-                          <td><%= bill.account.name %></td>
-                          <td><%= bill.category %></td>
+                          <td><%= bill.category.name %></td>
                           <td width="160px" >
                               <%= link_to 'Pagar', pay_bill_path(bill), :class => 'btn btn-mini medium-blue' %>
                               <%= link_to 'Detalhar', bill, :class => 'btn btn-mini medium-blue' %>

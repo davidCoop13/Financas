@@ -2604,7 +2604,7 @@
 			 * sZeroRecords - assuming that is given.
 			 */
 			if ( !oLanguage.sEmptyTable && oLanguage.sZeroRecords &&
-				oDefaults.sEmptyTable === "Nenhum dado encontrado" )
+				oDefaults.sEmptyTable === "No data available in table" )
 			{
 				_fnMap( oLanguage, oLanguage, 'sZeroRecords', 'sEmptyTable' );
 			}
@@ -2661,7 +2661,7 @@
 				nLength.id = oSettings.sTableId+'_length';
 			}
 			nLength.className = oSettings.oClasses.sLength;
-			nLength.innerHTML = '<label> Exibir '+ sStdMenu  +' resultados</label>';
+			nLength.innerHTML = '<label>'+oSettings.oLanguage.sLengthMenu.replace( '_MENU_', sStdMenu )+'</label>';
 			
 			/*
 			 * Set the length to the current display length - thanks to Andrea Pavlovic for this fix,
@@ -8991,7 +8991,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sFirst": "Primeiro",
+				"sFirst": "First",
 			
 			
 				/**
@@ -9012,7 +9012,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLast": "Ultimo",
+				"sLast": "Last",
 			
 			
 				/**
@@ -9033,7 +9033,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Proximo",
+				"sNext": "Next",
 			
 			
 				/**
@@ -9054,7 +9054,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Anterior"
+				"sPrevious": "Previous"
 			},
 		
 			/**
@@ -9063,19 +9063,19 @@
 			 * parameter - if it is not given, the value of sZeroRecords will be used
 			 * instead (either the default or given value).
 			 *  @type string
-			 *  @default Nenhum dado encontrado
+			 *  @default No data available in table
 			 *  @dtopt Language
 			 * 
 			 *  @example
 			 *    $(document).ready(function() {
 			 *      $('#example').dataTable( {
 			 *        "oLanguage": {
-			 *          "sEmptyTable": "Nenhum dado encontrado"
+			 *          "sEmptyTable": "No data available in table"
 			 *        }
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "Nenhum dado encontrado",
+			"sEmptyTable": "No data available in table",
 		
 		
 			/**
@@ -9216,7 +9216,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Vizualizar _MENU_ entradas",
 		
 		
 			/**
@@ -9238,7 +9238,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLoadingRecords": "Carregando...",
+			"sLoadingRecords": "Loading...",
 		
 		
 			/**
@@ -9257,7 +9257,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sProcessing": "Processando...",
+			"sProcessing": "Processing...",
 		
 		
 			/**
@@ -9290,7 +9290,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Procurar:",
+			"sSearch": "Pesquisar:",
 		
 		
 			/**
@@ -9333,7 +9333,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sZeroRecords": "Nenhum resultado encontrado"
+			"sZeroRecords": "No matching records found"
 		},
 	
 	
