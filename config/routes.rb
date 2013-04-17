@@ -1,7 +1,23 @@
 Financas::Application.routes.draw do
-  resources :invoices
+  
+  resources :invoices do
+   member do
+     get 'receive'
+     get 'receiveexec/:account_id', :action => 'receiveexec', :as => 'receiveexec'
+   end
+  end
 
-  resources :bills
+  resources :bills do 
+    collection do
+      get 'requests'
+    end
+    member do
+      get 'approve'
+      get 'approveexec'
+      get 'pay'
+      get 'payexec/:account_id', :action => 'payexec', :as => 'payexec'
+    end
+  end
 
   resources :categories
 
@@ -59,6 +75,10 @@ Financas::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
+  match '/billets/gerar_boleto/:banco' =>'billets#gerar_boleto'
+  # match '/home/boleto_hash' =>'home#boleto_hash'
+  # match '/home/boleto_em_bloco' =>'home#boleto_em_bloco'
+  # match '/home/multi_boleto' =>'home#multi_boleto'
 
   # See how all your routes lay out with "rake routes"
 

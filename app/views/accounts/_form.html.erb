@@ -3,13 +3,15 @@
 
   <div class="form-inputs">
 
-    <%= f.input :name %>
+    <%= f.input :name, label: 'Nome'  %>
 
-    <%= f.input :number %>
+    <%= f.input :number, label: 'Nmero'  %>
+
+    
 
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, 'Salvar', :class => 'btn btn-small medium-blue' %>
   </div>
 <% end %>

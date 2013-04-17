@@ -1,6 +1,24 @@
-<h1>Editing account</h1>
+<div class="container-fluid">
+  	<div class="row-fluid">
+    	<div class="span12">
 
-<%= render 'form' %>
+      		<div class="box bordered">
 
-<%= link_to 'Show', @account %> |
-<%= link_to 'Back', accounts_path %>
+        		<div class="row-fluid">
+          			<div class="span12">
+						<div class="padded">
+
+						<div class="section-title">Editando Contas</div>
+
+							<%= render 'form' %>
+
+							<%= link_to 'Detalhar', @account, :class => 'btn btn-mini medium-blue' %> 
+							<%= link_to 'Voltar', accounts_path, :class => 'btn btn-mini medium-blue' %>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

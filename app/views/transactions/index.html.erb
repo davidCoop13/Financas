@@ -1,33 +1,60 @@
-<h1>Listing transactions</h1>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-<table>
-  <tr>
-    <th>Number</th>
-    <th>Date</th>
-    <th>Description</th>
-    <th>Amount</th>
-    <th>Credit</th>
-    <th>Account</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <div class="box bordered">
 
-<% @transactions.each do |transaction| %>
-  <tr>
-    <td><%= transaction.number %></td>
-    <td><%= transaction.date %></td>
-    <td><%= transaction.description %></td>
-    <td><%= transaction.amount %></td>
-    <td><%= transaction.credit %></td>
-    <td><%= transaction.account.name %></td>
-    <td><%= link_to 'Show', transaction %></td>
-    <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
-    <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="padded">
 
-<br />
+              <div class="section-title">Movimentação</div>
 
-<%= link_to 'New Transaction', new_transaction_path %>
+
+              <div class="box bordered" style="position:relative;">
+              <div class="box-header" >
+                <i class="icon-signal"></i> Lista de transações
+              </div>
+
+              <table class="table table-striped data-table">
+
+                <thead>
+                <tr>
+                  <th>Referência</th>
+                  <th>Data</th>
+                  <th>Descrição</th>
+                  <th>Valor</th>
+                  <th>Conta</th>
+                  <th>Ações</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                  <% @transactions.each do |transaction| %>
+                      <tr>
+                          <td><%= transaction.number %></td>
+                          <td><%= transaction.date %></td>
+                          <td><%= transaction.description %></td>
+                          <td>R$<%= transaction.amount %></td>
+                          <td><%= transaction.account.name %></td>
+                          <td width="160px" >
+                              <%= link_to 'Detalhar', transaction, :class => 'btn btn-mini medium-blue' %>
+                          </td>
+                      </tr>
+                <% end %>
+
+                </tbody>
+              </table>
+              </div>
+              <br />
+
+              <%= link_to 'Nova transação', new_transaction_path, :class => 'btn btn-mini medium-blue' %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

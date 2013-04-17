@@ -1,40 +1,54 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-<p>
-  <b>Número:</b>
-  <%= @bill.number %>
-</p>
+      <div class="box bordered">
 
-<p>
-  <b>Data do pagamento:</b>
-  <%= @bill.payment_date %>
-</p>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="padded">
 
-<p>
-  <b>Método de pagamento:</b>
-  <%= @bill.payment_method %>
-</p>
+              <div class="section-title">Conta a pagar</div>
 
-<p>
-  <b>Valor:</b>
-  <%= @bill.amount %>
-</p>
+              <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Pago:</b>
-  <%= @bill.paid %>
-</p>
+              <p>
+                <b>Número de referência:</b>
+                <%= @bill.number %>
+              </p>
 
-<p>
-  <b>Conta:</b>
-  <%= @bill.account %>
-</p>
+              <p>
+                <b>Data do pagamento:</b>
+                <%= @bill.payment_date %>
+              </p>
 
-<p>
-  <b>Categoria:</b>
-  <%= @bill.category %>
-</p>
+              <p>
+                <b>Método de pagamento:</b>
+                <%= @bill.payment_method %>
+              </p>
+
+              <p>
+                <b>Valor:</b>
+                <%= @bill.amount %>
+              </p>
+
+              <p>
+                <b>Aprovado:</b>
+                <%= @bill.approved %>
+              </p>
+
+              <p>
+                <b>Categoria:</b>
+                <%= @bill.category.name %>
+              </p>
 
 
-<%= link_to 'Editar', edit_bill_path(@bill), :class => 'btn btn-mini medium-blue' %> 
-<%= link_to 'Voltar', bills_path, :class => 'btn btn-mini medium-blue' %>
+              <%= link_to 'Editar', edit_bill_path(@bill), :class => 'btn btn-mini medium-blue' %> 
+              <%= link_to 'Voltar', bills_path, :class => 'btn btn-mini medium-blue' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

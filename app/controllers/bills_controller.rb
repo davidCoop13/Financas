@@ -2,10 +2,24 @@ class BillsController < ApplicationController
   # GET /bills
   # GET /bills.json
   def index
-    @bills = Bill.all
+    @bills = Bill.includes(:category).where("paid = 0 AND approved = TRUE")
+
+    #puts YAML::dump(@bills)
+    puts @bills
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render json: @bills }
+    end
+  end
+
+  # GET /bills/requests
+  # GET /bills/requests.json
+  def requests
+    @bills = Bill.where :approved => false
+
+    respond_to do |format|
+      format.html # requests.html.erb
       format.json { render json: @bills }
     end
   end
@@ -25,6 +39,10 @@ class BillsController < ApplicationController
   # GET /bills/new.json
   def new
     @bill = Bill.new
+    @bill.paid = false
+    @bill.approved = true
+
+    @bill.save()
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +53,64 @@ class BillsController < ApplicationController
   # GET /bills/1/edit
   def edit
     @bill = Bill.find(params[:id])
+  end
+
+  def pay
+    @bill = Bill.find(params[:id])
+    @accounts = Account.all
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @bill  }
+    end
+  end
+
+  def payexec
+    @bill = Bill.find(params[:id])
+    @account = Account.find(params[:account_id])
+
+    @transaction = Transaction.new
+    @transaction.date = @bill.payment_date
+    #@transaction.category = @bill.category
+    @transaction.number = @bill.number
+    @transaction.description = "Pagamento de Conta"
+    @transaction.amount = -1.0 * @bill.amount
+    @transaction.account = @account
+
+    @transaction.save
+
+    @bill.paid = true
+    @bill.save
+
+    respond_to do |format|
+      format.html { redirect_to bills_url }
+      format.json { head :no_content }
+    end
+  end
+
+  # GET /bills/approve
+  # GET /bills/approve.json
+  def approve
+    @bill = Bill.find(params[:id])
+
+    respond_to do |format|
+      format.html # approve.html.erb
+      format.json { render json: @bill }
+    end
+  end
+
+  # GET /bills/requests
+  # GET /bills/requests.json
+  def approveexec
+    @bill = Bill.find(params[:id])
+    @bill.approved = true
+
+    @bill.save
+
+    respond_to do |format|
+      format.html { redirect_to "/bills/requests" }
+      format.json { render json: @bill }
+    end
   end
 
   # POST /bills

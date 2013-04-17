@@ -81,23 +81,23 @@
 
       <ul id="sample-pages" class="collapse secondary">
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <%= link_to "Movimentação", "/financeiro/movimentacao" %>
+          <%= link_to "Movimentação", "/transactions" %>
         </li>
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <%= link_to "Contas a Pagar", "/financeiro/contasapagar" %>
+          <%= link_to "Contas a Pagar", "/bills" %>
         </li>
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <%= link_to "Contas a Receber", "/financeiro/contasareceber" %>
+          <%= link_to "Contas a Receber", "/invoices" %>
         </li>
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <%= link_to "Aprovação de Pedidos", "/financeiro/aprovacao" %>
+          <%= link_to "Aprovação de Pedidos", "/bills/requests" %>
         </li>        
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <a href="">Demostrativo</a>
-        </li>
-        <li class="<%= nav_active(secondary: "faq") %>">
-          <a href="">Relatório KPI's</a>
-        </li>
+          <%= link_to "Contas", "/accounts" %>
+        </li> 
+        <li class="<%= nav_active(secondary: "gallery") %>">
+          <%= link_to "Categorias", "/categories" %>
+        </li> 
       </ul>
     </li>
 
